@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(221, 244, 253);/*กำหนดสีพื้นหลัง*/
+    font-family: 'supermarketregular';/*ฟ้อนต์ที่จะแสดงผลในหน้าเว็บ*/
+}
+nav{
+    border-bottom: 20px solid; /*ให้ด้านล่างของภาพมีขอบ 20 px */
+    background-color:  #ff9100;/*กำหนดสีของแถบเมนู*/
+    border-color: rgba(0, 0, 0, 0.1);/*กำหนดสีขอบเข้มจากสีแทบเมนู*/
+}
+.mainMenu a:hover, .mainMenu a:visited{
+    background-color:#ffc170;/*เมือนำเมาส์ไปชี้ให้เปลี่ยนสี*/
+}
+a{
+    color: white;/*สีของข้อความเป็นสีขาว*/
+    text-decoration:none;/*ยกเลิกการใช้เส้นใต้ของลิงก์ข้อความ*/
+    padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
+}
+main{
+    display: grid;/*แสดงผลแบบกริด*/
+    grid-template: auto;
+    grid-template-areas: /*ให้แสดงผลเรียงลำดับโดยเริ่มจาก Head1,2,3 ตามลำดับ*/
+            "head1"
+            "head2"
+            "head3";
+        grid-gap:0.5em;/*ช่องว่างระหว่างกริด 0.5 em*/
+        background-color: #ff9100;/*กำหนดสีพื้นหลัง*/
+        font-size: 1em;/*ขนาดข้อความ 1 em*/
+}
+
+#head1,#head2{
+    background: #ff9100;/*กำหนดสีพื้นหลัง*/
+    font-size: 1em;/*ขนาดข้อความ 1 em*/
+    margin: 0;/*ระยะห่างจากขอบบน ล่าง ซ้าย ขวา เท่ากับ0*/
+    padding: 5px;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 5px*/
+}
+#content1{
+    position: relative;/*ให้แสดงผลในตำแหน่งที่อยู่*/
+    background-color: #ffffffc2;/*กำหนดสีพื้นหลัง*/
+    font-size: 1em;/*ขนาดข้อความ 1 em*/
+    padding: 1em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 1em*/
+}
+h2{
+    color: whitesmoke; /*กำหนดสี*/
+}
+
+h3{
+    color: black;/*กำหนดสี*/
+    font-weight: inherit;/*ให้ขนาดของข้อความหนาขึ้น*/
+}
+
+img{
+    display: block;/*ให้แสดงผลเป็นบล็อก*/
+    width:20%;/*ขนาดของภาพ20%*/
+    margin-left: auto;/*ขอบด้านซ้ายให้มีขนาดออโต้*/
+    margin-right: auto;/*ขอบด้านขวาให้มีขนาดออโต้*/
+    
+}
+
+#head1{
+    grid-area: head1;/*ตั้งชื่อกริดแอเรีย*/
+}
+#head2{
+    grid-area: head2;/*ตั้งชื่อกริดแอเรีย*/
+}
+#head3{
+    grid-area: head3;/*ตั้งชื่อกริดแอเรีย*/
+}
+footer{
+    position: relative;/*ให้แสดงผลในตำแหน่งที่อยู่*/
+    padding:1em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 1em*/
+    border-bottom: 20px solid;/*ให้ด้านล่างของภาพมีขอบ 20 px */
+    background-color:#ff9100;/*กำหนดสีพื้นหลัง*/
+    border-color: rgba(0, 0, 0, 0.1);/*กำหนดสีขอบเข้มจากสีแทบเมนู*/
+}
+
+p{
+    color: white;/*กำหนดสี*/
+    text-align: center;/*กำหนดตำแหน่งของข้อความ*/
+    font-size: 1em;/*ขนาดฟอนต์ 1 em*/
+}
+div{
+    text-align: center; /*กำหนดตำแหน่งของข้อความ*/
+}
+/*responsive*/
+
+
+
+@media screen and (max-width:379px){
+    img{
+        width: 20%;/*กำหนดขนาดของภาพ*/
+    }
+    .mainMenu{
+        display: grid;/*แสดงผลแบบกริด*/
+    }
+    nav{
+        text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+        margin-top: 1em;/*ขอบจากได้บน 1em*/
+        font-size: 1em;/*กำหนดขนาดฟอนต์*/
+        padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
+    }
+}
+
+@media screen and (min-width:380px) and (max-width:619px){
+    img{
+        width: 20%;/*กำหนดขนาดของภาพ*/
+    }
+    nav{
+        text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+        margin-top: 1em;/*ขอบจากได้บน 1em*/
+        font-size: 1em;/*กำหนดขนาดฟอนต์*/
+        padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
+    }
+}
+
+@media screen and (min-width:620px) and (max-width:959px){
+     body{
+        margin-left: 5em;/*กำหนดระยะห่างจากขอบด้านซ้าย 5em*/
+        margin-right: 5em;/*กำหนดระยะห่างจากขอบด้านขวา 5em*/
+    }
+    img{
+        width: 20%;/*กำหนดขนาดของภาพ*/
+    }
+    nav{
+        text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+        margin-top: 1em;/*ขอบจากได้บน 1em*/
+        font-size: 1.4em;/*กำหนดขนาดฟอนต์*/
+        padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
+    }
+}
+@media screen and (min-width:960px){
+    img{
+        width: 20%;/*กำหนดขนาดของภาพ100%*/
+    }
+    body{
+        margin-left: 5em;/*กำหนดระยะห่างจากขอบด้านซ้าย 5em*/
+        margin-right: 5em;/*กำหนดระยะห่างจากขอบด้านขวา 5em*/
+    }
+    nav{
+        text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+        margin-top: 1em;/*ขอบจากได้บน 1em*/
+        font-size: 1.4em;/*กำหนดขนาดฟอนต์*/
+        padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/ 
+    }
+    
+article{
+    display: grid;
+    grid-template-areas: /*ให้แสดงผลเรียงลำดับโดยเริ่มจาก Head1,2,3 ตามลำดับ*/
+            "head1 head2";
+    }
+}

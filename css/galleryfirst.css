@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(221, 244, 253);/*กำหนดสีพื้นหลัง*/
+    font-family: 'supermarketregular';/*ฟ้อนต์ที่จะแสดงผลในหน้าเว็บ*/   
+}
+nav{
+    border-bottom: 20px solid; /*ให้ด้านล่างของภาพมีขอบ 20 px */
+    background-color:  #ff9100;/*กำหนดสีของแถบเมนู*/
+    border-color: rgba(0, 0, 0, 0.1);/*กำหนดสีขอบเข้มจากสีแทบเมนู*/
+}
+
+.mainMenu a:hover, .mainMenu a:visited{
+    background-color:#ffc170;/*เมือนำเมาส์ไปชี้ให้เปลี่ยนสี*/
+}
+a{
+    color: white;/*สีของข้อความเป็นสีขาว*/
+    text-decoration:none;/*ยกเลิกการใช้เส้นใต้ของลิงก์ข้อความ*/
+    padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
+}
+main{
+    display: grid;/*แสดงผลแบบกริด*/
+    grid-template-areas: /*ให้แสดงผลเรียงลำดับโดยเริ่มจาก Head1,2,3 ตามลำดับ*/
+            "head1";
+    background-color: #ff9100;/*กำหนดสีพื้นหลัง*/
+    font-size: 1em;/*ขนาดข้อความ 1 em*/
+}
+#head1{
+    background: #ff9100;/*กำหนดสีพื้นหลัง*/
+    font-size: 1em;/*ขนาดข้อความ 1 em*/
+    margin: 0;/*ระยะห่างจากขอบบน ล่าง ซ้าย ขวา เท่ากับ0*/
+    padding: 5px;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 5px*/
+}
+#content1{
+    position: relative;/*ให้แสดงผลในตำแหน่งที่อยู่*/
+    float: left;/*ให้แสดงผลในตำแหน่งที่อยู่*/
+    background-color: #ffc170;/*กำหนดสีพื้นหลัง*/
+    padding: 1em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 1em*/
+}
+
+.overlay {
+    position: absolute;/*ให้ตำแหน่งที่จะแสดงผลแค่ภาพใต้ element ของ overlay*/
+    bottom: 0; /*ขอบล่าง 0*/
+    left: 0;/*ด้านซ้าย 0*/
+    right: 0;/*ด้านขวา 0*/
+    background-color: #008CBA; /*กำหนดสีพื้นหลัง*/
+    overflow: hidden;/*เมื่อไม่มีการชี้ให้ซ่อน*/
+    width: 100%;/*ขนาด100 %*/
+    height: 0%;/*ให้แสดงจากขอบด้านล่าง*/
+    transition: .5s ease;/*แสดงผล5 0.5 วินาที แบบค่อยเด้ง*/
+  }
+  .amb:hover .overlay {
+    height: 30%;/*แสดงผลเมื่อมีการชี้ขึ้นไปด้านบน 30 %*/
+  }
+  .am:hover .overlay {
+    height: 30%;/*แสดงผลเมื่อมีการชี้ขึ้นไปด้านบน 30 %*/
+  }
+
+h2{
+    color: whitesmoke; /*กำหนดสี*/
+}
+
+h4{
+    color: black;/*กำหนดสี*/
+}
+.text1 {
+    color: white;/*กำหนดสี*/
+    position: absolute;/*ให้ตำแหน่งที่จะแสดงผลแค่ภาพใต้ element ของ text1*/
+    top: 50%;/*ให้ตำแหน่งของข้อความจากด้านบนลงมา 50 %*/
+    left: 50%;/*ให้ตำแหน่งข้อความจากด้านซ้ายถัดมา 50%*/
+    transform: translate(-50%, -50%);/*เป็นการค่อยๆถัดข้อความจากแนวนอน -50 แนวตั้ง-50*/
+    text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+  }
+
+#head1{
+    grid-area: head1;/*ตั้งชื่อกริดแอเรีย*/
+}
+footer{
+    position: relative;/*ให้แสดงผลในตำแหน่งที่อยู่*/
+    padding:1em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 1em*/
+    border-bottom: 20px solid;/*ให้ด้านล่างของภาพมีขอบ 20 px */
+    background-color:#ff9100;/*กำหนดสีพื้นหลัง*/
+    border-color: rgba(0, 0, 0, 0.1);/*กำหนดสีขอบเข้มจากสีแทบเมนู*/
+}
+p{
+    color: white;/*กำหนดสี*/
+    text-align: center;/*กำหนดตำแหน่งของข้อความ*/
+    font-size: 1em;/*ขนาดฟอนต์ 1 em*/
+}
+div{
+    text-align: center; /*กำหนดตำแหน่งของข้อความ*/
+}
+img{
+    width: 100%;    
+}
+
+
+/*responsive*/
+
+
+
+@media screen and (max-width:379px){
+    nav{
+        text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+        margin-top: 1em;/*ขอบจากได้บน 1em*/
+        font-size: 1em;/*กำหนดขนาดฟอนต์*/
+        padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
+    }
+}
+
+@media screen and (min-width:380px) and (max-width:619px){
+    nav{
+    text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+    margin-top: 1em;/*ขอบจากได้บน 1em*/
+    font-size: 1em;/*กำหนดขนาดฟอนต์*/
+    padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
+    }
+}
+
+@media screen and (min-width:620px) and (max-width:959px){
+    nav{
+        text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+        margin-top: 1em;/*ขอบจากได้บน 1em*/
+        font-size: 1.4em;/*กำหนดขนาดฟอนต์*/
+        padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
+    }
+}
+
+@media screen and (min-width:960px){
+    body{
+        margin-left: 5em;/*กำหนดระยะห่างจากขอบด้านซ้าย 5em*/
+        margin-right: 5em;/*กำหนดระยะห่างจากขอบด้านขวา 5em*/
+    }
+    nav{
+        text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
+        margin-top: 1em;/*ขอบจากได้บน 1em*/
+        font-size: 1.4em;/*กำหนดขนาดฟอนต์*/
+        padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/ 
+    }
+}
