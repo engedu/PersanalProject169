@@ -132,7 +132,7 @@ img{
 
 
 
-@media screen and (max-width:379px){
+@media screen and (max-width:469px){
     .mainMenu{
         display: grid;/*แสดงผลแบบกริด*/
     }
@@ -159,16 +159,10 @@ img{
         font-size: 1em;/*กำหนดขนาดฟอนต์*/
         padding: 0.5em;/*ห่างของขอบด้านบน และล่างวัดจากข้อความ 0.5em*/
     }
-    article{
-        display: grid;/*แสดงผลแบบกริด*/
-        grid-template-areas: /*ให้แสดงผลเรียงลำดับโดยเริ่มจาก Head1,2,3 ตามลำดับ*/
-        "PicAbout",
-        "About";
-    }
     
 }
 
-@media screen and (min-width:380px) and (max-width:619px){
+@media screen and (min-width:470px) and (max-width:599px){
     .text{
         text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
         position: absolute;/*ให้ตำแหน่งที่จะแสดงผลแค่ภาพใต้ element ของ text*/
@@ -194,15 +188,9 @@ img{
     .amb{
         max-width: 245px;/*ขนาดสูงสุดของภาพ 245px*/
     }
-    article{
-        display: grid;/*แสดงผลแบบกริด*/
-        grid-template-areas: /*ให้แสดงผลเรียงลำดับโดยเริ่มจาก Head1,2,3 ตามลำดับ*/
-        "PicAbout",
-        "About";
-    }
 }
 
-@media screen and (min-width:620px) and (max-width:959px){
+@media screen and (min-width:600px) and (max-width:959px){
     .text{
         text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
         position: absolute;/*ให้ตำแหน่งที่จะแสดงผลแค่ภาพใต้ element ของ text*/
@@ -232,12 +220,6 @@ img{
         max-width:270px;/*ขนาดสูงสุดของภาพ 270px*/
     }
     
-    article{
-        display: grid;/*แสดงผลแบบกริด*/
-        grid-template-areas: /*ให้แสดงผลเรียงลำดับโดยเริ่มจาก Head1,2,3 ตามลำดับ*/
-        "PicAbout",
-        "About";
-    }
 }
 
 @media screen and (min-width:960px){
@@ -275,10 +257,5 @@ img{
     }
     .am{
         max-width: 430px;/*ขนาดสูงสุดของภาพ 430px*/
-    }
-    article{
-        display: grid;/*แสดงผลแบบกริด*/
-        grid-template-areas: /*ให้แสดงผลเรียงลำดับโดยเริ่มจาก Head1,2,3 ตามลำดับ*/
-        "PicAbout About";
     }
 }

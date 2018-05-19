@@ -97,7 +97,10 @@ img{
 
 
 
-@media screen and (max-width:379px){
+@media screen and (max-width:469px){
+    .mainMenu{
+        display: grid;/*แสดงผลแบบกริด*/
+    }
     nav{
         text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
         margin-top: 1em;/*ขอบจากได้บน 1em*/
@@ -106,7 +109,7 @@ img{
     }
 }
 
-@media screen and (min-width:380px) and (max-width:619px){
+@media screen and (min-width:470px) and (max-width:599px){
     nav{
     text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
     margin-top: 1em;/*ขอบจากได้บน 1em*/
@@ -115,7 +118,7 @@ img{
     }
 }
 
-@media screen and (min-width:620px) and (max-width:959px){
+@media screen and (min-width:600px) and (max-width:959px){
     nav{
         text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
         margin-top: 1em;/*ขอบจากได้บน 1em*/

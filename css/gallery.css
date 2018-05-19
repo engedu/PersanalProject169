@@ -72,7 +72,7 @@ div{
 
 
 
-@media screen and (max-width:379px){
+@media screen and (max-width:469px){
     .mainMenu{
         display: grid;/*แสดงผลแบบกริด*/
     }
@@ -84,7 +84,7 @@ div{
     }
 }
 
-@media screen and (min-width:380px) and (max-width:619px){
+@media screen and (min-width:47px) and (max-width:599px){
     nav{
         text-align: center;/*กำหนดตำแหน่งของข้อความให้อยู่ตรงกลาง*/
         margin-top: 1em;/*ขอบจากได้บน 1em*/
